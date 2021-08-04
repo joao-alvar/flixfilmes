@@ -13,24 +13,30 @@ body {
 body {
     font-family: 'Roboto', sans-serif;
     min-width: 320px;
+    background-color: #161616;
 }
 
 main {
     width: 100%;
     height: 100%;
-    background-color: #2d2d2d;
     color: #fff;
-    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 40%;
 }
 
 .filmes {
     width: 14em;
     height: 8em;
+    margin: 2rem;
 }
 
 
-.filmes:hover {
-    transform: scale(1.1)
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 5px rgba(17, 17, 17, 0.2);
 }
 
 img {
@@ -51,7 +57,7 @@ img {
 .filme-nota {
     margin-left: auto;
     margin-right: 4%;
-    background-color: #1d1d1d;
+    background-color: #2d2d2d;
     padding: 0.25em 0.5em;
     border-radius: 3px;
 }
@@ -77,9 +83,11 @@ header {
 }
 
 .user-avatar {
-    width: 2em;
-    height: 2em;
+    width: 2.5em;
+    height: 2.5em;
     background-color: #fff;
     margin-left: auto;
-    margin-right: 2%;
+    margin-right: 1%;
+    background-image: url(images/user-avatar.png);
+    background-size: cover;
 }
