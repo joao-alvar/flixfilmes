@@ -24,7 +24,7 @@ async function getFilmes() {
       />
       <div class="filmes-info">
         <h3 class="filme-titulos">${title}</h3>
-        <span class="filme-nota">${vote_average}</span>
+        <span class="${getClassByRate(vote_average)}">${vote_average}</span>
       </div>
       `;
 
@@ -32,6 +32,16 @@ async function getFilmes() {
   });
 
   return respData;
+}
+
+function getClassByRate(vote) {
+  if (vote >= 8) {
+    return "green";
+  } else if (vote >= 5) {
+    return "orange";
+  } else {
+    return "red";
+  }
 }
 
 getFilmes();
