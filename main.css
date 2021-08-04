@@ -18,14 +18,19 @@ body {
 main {
     width: 100%;
     height: 100%;
-    background-color: #1d1d1d;
+    background-color: #2d2d2d;
     color: #fff;
+    padding: 0 2%;
 }
 
 .filmes {
-    width: 17em;
-    height: 25em;
-    background-color: #;
+    width: 14em;
+    height: 8em;
+}
+
+
+.filmes:hover {
+    transform: scale(1.1)
 }
 
 img {
@@ -46,7 +51,35 @@ img {
 .filme-nota {
     margin-left: auto;
     margin-right: 4%;
-    background-color: #2d2d2d;
+    background-color: #1d1d1d;
     padding: 0.25em 0.5em;
     border-radius: 3px;
+}
+
+header {
+    width: 100%;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    background-color: #1d1d1d;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.logo {
+    margin-left: 1%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo-span {
+    background-color: #E50914;
+    padding: 0.1em 0.15em;
+}
+
+.user-avatar {
+    width: 2em;
+    height: 2em;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: 2%;
 }
