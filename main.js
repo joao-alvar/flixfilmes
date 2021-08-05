@@ -29,7 +29,7 @@ function mostrarFilmes(movies) {
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
           </div>
           <div class="sinopse">
-          <h3 class="sinopse-titulo">Sinopse</h3>
+          <h3 class="sinopse-titulo">Sinopse <span class="meus-favoritos"><i class="far fa-heart"></i></span></h3>
           <p class="sinopse-p">${overview}</p>
           </div>
           `;

@@ -99,6 +99,44 @@ header {
 .logo-span {
     background-color: #E50914;
     padding: 0.1em 0.15em;
+    border-radius: 1px;
+}
+
+.minha-lista {
+    width: 8em;
+    margin-right: 4.5%;
+}
+
+nav {
+    font-size: 0.62rem;
+    padding-top: 2em;
+}
+
+nav h2 {
+    text-transform: uppercase;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+    background: #d11f28;
 }
 
 .user-avatar-container {
@@ -182,8 +220,16 @@ form:valid .seach-btn {
 
 .sinopse-titulo {
     padding-bottom: .82rem;
+    position: relative;
 }
 
 .sinopse-p {
     font-size: 0.97rem;
+}
+
+.meus-favoritos {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    cursor: pointer;
 }
