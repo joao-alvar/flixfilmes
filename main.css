@@ -314,7 +314,6 @@ img {
         z-index: 999;
         justify-content: center;
         align-items: center;
-        flex-direction: column-reverse;
     }
 
     nav.active {
