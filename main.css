@@ -52,6 +52,14 @@ header {
     border-radius: 1px;
 }
 
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* 
 .minha-lista {
     width: 8em;
     margin-right: 4.5%;
@@ -87,7 +95,7 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
     background: #d11f28;
-}
+} */
 
 .user-avatar-container {
     width: 5.5em;
@@ -256,4 +264,113 @@ img {
     cursor: pointer;
 }
 
+#menu {
+    display: none;
+}
+
 .realese-data {}
+
+@media (max-width: 700px) {
+    .user-avatar-container {
+        display: none;
+    }
+
+    #form {
+        width: 90%;
+        margin-bottom: auto;
+        margin-top: 5em;
+    }
+
+    #search {
+        width: 100%;
+    }
+
+    #menu {
+        display: block;
+        color: #fff;
+        position: absolute;
+        right: 5%;
+        font-size: 1.4em;
+        z-index: 1000;
+    }
+
+    .logo {
+        margin-left: 4%;
+        z-index: 1000;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        position: fixed;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        transform: translateY(-100em);
+        background-color: #1d1d1d;
+        transition: 600ms;
+        z-index: 999;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    nav.active {
+        transform: translateY(0);
+    }
+}
+
+
+.c_hamburger {
+    cursor: pointer;
+    height: 30px;
+    margin: 0 auto;
+    position: relative;
+    width: 37px;
+}
+
+.c_hamburger .c_hamburger__line {
+    background-color: #fff;
+    border-radius: 3px;
+    height: 5px;
+    position: absolute;
+    transition-duration: 150ms;
+    transition: cubic-bezier(0.8, 0.5, 0.2, 1.4);
+    width: 100%;
+}
+
+.c_hamburger .c_hamburger__line:nth-child(1) {
+    left: 0px;
+    top: 0px;
+    transition-duration: 150ms;
+}
+
+.c_hamburger .c_hamburger__line:nth-child(2) {
+    left: 0px;
+    opacity: 1;
+    top: 12px;
+}
+
+.c_hamburger .c_hamburger__line:nth-child(3) {
+    bottom: 0px;
+    left: 0px;
+    transition-duration: 230ms;
+}
+
+.c_hamburger.active .c_hamburger__line:nth-child(1) {
+    top: 16px;
+    transform: rotate(45deg);
+    transition-duration: 230ms;
+}
+
+.c_hamburger.active .c_hamburger__line:nth-child(2) {
+    opacity: 0;
+}
+
+.c_hamburger.active .c_hamburger__line:nth-child(3) {
+    top: 16px;
+    transform: rotate(-45deg);
+    transition-duration: 230ms;
+}

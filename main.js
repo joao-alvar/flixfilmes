@@ -61,3 +61,39 @@ form.addEventListener("submit", (e) => {
     search.value = "";
   }
 });
+
+// document
+//   .getElementById("meus-favoritos")
+//   .addEventListener("click", function () {
+//     alert("hello");
+//   });
+
+// window.addEventListener("load", function () {
+//   var mover = document.getElementById("meus-favoritos");
+
+//   mover.addEventListener("click", function (event) {
+//     alert("hello");
+//   });
+// });
+
+// var el = document.querySelector(".meus-favoritos");
+// if (el) {
+//   el.addEventListener("click", meusFavoritos);
+// }
+
+// function meusFavoritos() {
+//   console.log("it works eurekaaa");
+// }
+
+function toggleMenu() {
+  toggle.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+const toggle = document.querySelector("#menu");
+const navMenu = document.querySelector("nav");
+
+toggle.onclick = function toggleMenu() {
+  toggle.classList.toggle("active");
+  navMenu.classList.toggle("active");
+};

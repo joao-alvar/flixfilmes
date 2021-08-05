@@ -19,7 +19,13 @@
       <h2 onClick="window.location.reload();" class="logo">
         <span class="logo-span">flix</span>filmes
       </h2>
-      <form action="" id="form">
+      <div class="hamburger c_hamburger" id="menu">
+        <span class="c_hamburger__line"></span>
+        <span class="c_hamburger__line"></span>
+        <span class="c_hamburger__line"></span>
+      </div>
+      <nav>
+      <form action="" id="form" onsubmit="toggleMenu()">
         <input
           type="text"
           autocomplete="off"
@@ -38,6 +44,7 @@
         <h3 class="user-msg">Olá</h3>
         <div class="user-avatar"></div>
       </div>
+    </nav>
     </header>
     <main></main>
     <script src="./api.js"></script>
