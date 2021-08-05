@@ -4,5 +4,8 @@
 também permite que usuários pesquise filmes pelo nome;
 provedor do api é: https://www.themoviedb.org
 
+Sobre a construção: Foi usado HTML, CSS e JavaScrript.
+O JavaScrript permite fazer a requisição api e a manipulação do dom para atualizar a informações adquiridas e então passar as informações direto para o Html.
+
 Live: https://flix-filmes.netlify.app
  
