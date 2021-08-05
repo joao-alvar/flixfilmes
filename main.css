@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+:root {
+    --transition: 800ms;
+}
+
 html,
 body {
     height: 100%;
@@ -100,7 +104,7 @@ header {
     height: 2.5em;
     background-color: #fff;
     margin-left: auto;
-    margin-right: 1%;
+    margin-right: 1.4%;
     background-image: url(images/user-avatar.png);
     background-size: cover;
 }
@@ -120,6 +124,7 @@ form {
     height: 2.5em;
     padding-left: .4em;
     border-right: none;
+    transition: var(--transition);
 }
 
 form:valid #search {
@@ -130,6 +135,8 @@ form:valid .seach-btn {
     background-color: #d11f28;
     border-color: #d11f28;
     color: #fff;
+    pointer-events: visible;
+    cursor: pointer;
 }
 
 .seach-btn {
@@ -138,4 +145,6 @@ form:valid .seach-btn {
     border: 1px solid #fff;
     border-left: none;
     background-color: #fff;
+    pointer-events: none;
+    transition: var(--transition);
 }
