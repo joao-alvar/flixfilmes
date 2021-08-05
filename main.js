@@ -20,17 +20,19 @@ function mostrarFilmes(movies) {
     filmeEl.classList.add("filmes");
 
     filmeEl.innerHTML = `
+    <div class="filmes-wrap">
           <img
             src="${POSTERPATH + poster_path}"
             alt="${title}"
           />
-          <div class="filmes-info">
-            <h3 class="filme-titulos">${title}</h3>
-            <span class="${getClassByRate(vote_average)}">${vote_average}</span>
-          </div>
           <div class="sinopse">
           <h3 class="sinopse-titulo">Sinopse <span class="meus-favoritos"><i class="far fa-heart"></i></span></h3>
           <p class="sinopse-p">${overview}</p>
+          </div>
+          </div>
+          <div class="filmes-info">
+            <h3 class="filme-titulos">${title}</h3>
+            <span class="${getClassByRate(vote_average)}">${vote_average}</span>
           </div>
           `;
 
@@ -59,11 +61,3 @@ form.addEventListener("submit", (e) => {
     search.value = "";
   }
 });
-
-const reloadtButton = document.querySelector(".logo");
-// Reload everything:
-function reload() {
-  reload = location.reload();
-}
-// Event listeners for reload
-reloadButton.addEventListener("click", reload, false);
