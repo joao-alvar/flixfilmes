@@ -93,6 +93,7 @@ header {
     margin-left: 1%;
     color: #fff;
     text-transform: uppercase;
+    cursor: pointer;
 }
 
 .logo-span {
