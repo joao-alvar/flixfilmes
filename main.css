@@ -152,19 +152,6 @@ form:valid .seach-btn {
     cursor: pointer;
 }
 
-.sinopse {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    padding: 2rem;
-    background-color: #1d1d1d;
-    transform: translateY(101%);
-    overflow-y: auto;
-    transition: var(--transition);
-}
-
 .filmes {
     width: 14em;
     height: 27em;
@@ -200,8 +187,9 @@ img {
     margin-left: auto;
     margin-right: 0%;
     background-color: #2d2d2d;
-    padding: 0.25em 0.5em;
+    padding: 0.25em 0.30em;
     border-radius: 3px;
+    font-size: .96rem;
 }
 
 .filmes-info span.green {
@@ -219,6 +207,34 @@ img {
 .filmes-wrap:hover .sinopse {
     transform: translateY(0);
 }
+
+.sinopse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 2rem;
+    background-color: #1d1d1d;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: var(--transition);
+}
+
+.sinopse::-webkit-scrollbar {
+    width: 8px;
+}
+
+.sinopse::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.sinopse::-webkit-scrollbar-thumb {
+    background-color: #999999;
+    border-radius: 50px;
+    height: 10em;
+}
+
 
 .sinopse-titulo {
     padding-bottom: .82rem;
