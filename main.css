@@ -28,13 +28,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    row-gap: 265px;
 }
 
 .filmes {
     width: 14em;
-    height: 8em;
+    height: 27em;
     margin: 1rem;
+    overflow: hidden;
+    position: relative;
 }
 
 @media (min-width: 1100px) {
@@ -147,4 +148,25 @@ form:valid .seach-btn {
     background-color: #fff;
     pointer-events: none;
     transition: var(--transition);
+}
+
+.sinopse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 2rem;
+    background-color: #1d1d1d;
+    transform: translateY(101%);
+    overflow-y: auto;
+    transition: 800ms;
+}
+
+.filmes:hover .sinopse {
+    transform: translateY(0);
+}
+
+.sinopse-titulo {
+    padding-bottom: .82rem;
 }

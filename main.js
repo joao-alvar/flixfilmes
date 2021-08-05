@@ -14,7 +14,7 @@ async function getFilmes(url) {
 function mostrarFilmes(movies) {
   main.innerHTML = "";
   movies.forEach((movie) => {
-    const { poster_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average, overview } = movie;
 
     const filmeEl = document.createElement("div");
     filmeEl.classList.add("filmes");
@@ -28,6 +28,9 @@ function mostrarFilmes(movies) {
             <h3 class="filme-titulos">${title}</h3>
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
           </div>
+          <div class="sinopse">
+          <h4 class="sinopse-titulo">sinopse</h4>
+          ${overview}</div>
           `;
 
     main.appendChild(filmeEl);
