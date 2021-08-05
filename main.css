@@ -170,3 +170,13 @@ form:valid .seach-btn {
 .sinopse-titulo {
     padding-bottom: .82rem;
 }
+
+.sinopse-p {
+    font-size: 0.97rem;
+}
+
+.realeses {
+    color: #fff;
+    padding: 1.8rem;
+    text-align: center;
+}

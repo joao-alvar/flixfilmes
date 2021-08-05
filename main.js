@@ -29,8 +29,9 @@ function mostrarFilmes(movies) {
             <span class="${getClassByRate(vote_average)}">${vote_average}</span>
           </div>
           <div class="sinopse">
-          <h4 class="sinopse-titulo">sinopse</h4>
-          ${overview}</div>
+          <h3 class="sinopse-titulo">Sinopse</h3>
+          <p class="sinopse-p">${overview}</p>
+          </div>
           `;
 
     main.appendChild(filmeEl);
