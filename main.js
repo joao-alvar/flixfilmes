@@ -26,7 +26,6 @@ function mostrarFilmes(movies) {
             alt="${title}"
           />
           <div class="sinopse">
-          <h3 class="sinopse-titulo">Sinopse <span class="meus-favoritos"><i class="far fa-heart"></i></span></h3>
           <span class="realese-data">${release_date}</span>
           <p class="sinopse-p">${overview}</p>
           </div>

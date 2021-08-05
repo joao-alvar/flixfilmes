@@ -160,6 +160,10 @@ form:valid .seach-btn {
     position: relative;
 }
 
+.filmes-wrap {
+    width: 100%;
+}
+
 img {
     width: 100%;
     background-size: cover;
