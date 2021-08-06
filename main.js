@@ -11,10 +11,10 @@ async function getFilmes(url) {
   mostrarFilmes(respData.results);
 }
 
-function mostrarFilmes(movies) {
+function mostrarFilmes(filmes) {
   main.innerHTML = "";
-  movies.forEach((movie) => {
-    const { poster_path, title, vote_average, overview, release_date } = movie;
+  filmes.forEach((filme) => {
+    const { poster_path, title, vote_average, overview, release_date } = filme;
 
     const filmeEl = document.createElement("div");
     filmeEl.classList.add("filmes");
@@ -62,29 +62,6 @@ form.addEventListener("submit", (e) => {
     search.value = "";
   }
 });
-
-// document
-//   .getElementById("meus-favoritos")
-//   .addEventListener("click", function () {
-//     alert("hello");
-//   });
-
-// window.addEventListener("load", function () {
-//   var mover = document.getElementById("meus-favoritos");
-
-//   mover.addEventListener("click", function (event) {
-//     alert("hello");
-//   });
-// });
-
-// var el = document.querySelector(".meus-favoritos");
-// if (el) {
-//   el.addEventListener("click", meusFavoritos);
-// }
-
-// function meusFavoritos() {
-//   console.log("it works eurekaaa");
-// }
 
 function toggleMenu() {
   toggle.classList.toggle("active");
